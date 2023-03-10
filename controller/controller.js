@@ -27,7 +27,6 @@ exports.updateElement = async (req,res,next) => {
         });
     }else{
         try{
-         
             const updatedElement = await Approvals.updateOne({_id : id} , req.body);
             return res.status(200).send(updatedElement);
         }catch(err){
