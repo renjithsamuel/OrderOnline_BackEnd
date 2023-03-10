@@ -17,6 +17,7 @@ try{
 }
 
 
+
 exports.updateElement = async (req,res,next) => {
     let id = req.params.id;
     console.log(id);
@@ -37,3 +38,6 @@ exports.updateElement = async (req,res,next) => {
         }
     }
 }
+
+
+   
